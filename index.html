@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="./public/images/logoCinema.png" alt="logo" />
+        <h1>Les Films de Plein Air</h1>
+      </div>
+      <div class="nav-right">
+        <a href="./index.html">Accueil</a>
+        <a href="./about.html">À propos</a>
+        <a href="#nextMovie">Prochains films</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+    <main>
+      <!--Bref description de l'événement-->
+      <section class="event-section">
+        <div class="event-section-description">
+          <h2>Le festival "Les Films de Plein Air"</h2>
+          <p>Notre association "Les Films de Plein Air" vient d'obtenir l'autorisation de projeter au parc Monceau cette année, chaque soir du 5 au 8 août, de 18 heures à minuit. Notre objectif ? faire découvrir des films d'auteur au grand public.</p>
+        </div>
+        <div class="event-section-image">
+        </div>
+        <img id="emptyBucket" src="/public/images/emptyBucket.png">
+        <img id="popcorn1" src="/public/images/popcorn1.png">
+        <img id="popcorn2" src="/public/images/popcorn2.png">
+        <img id="popcorn3" src="/public/images/popcorn1.png">
+        <img id="popcorn4" src="/public/images/popcorn2.png">
+      </section>
+      <!--Prochain films-->
+      <h2 id="nextMovie">Les films à venir : </h2>
+      <section class="movies-section">
+        
+        <article class="movie-card">
+          <div class="movie-card-info">
+            <h3>Into the Wild</h3>
+            <p>Film de Sean Penn · 2 h 28 min · 9 janvier 2008 (France) · Genres : Biopic, Road movie, Drame · Casting (acteurs principaux) : Emile Hirsch, Marcia Gay Harden, William Hurt, Jena Malon · Christopher a 22 ans et une soif d'absolu et de liberté sans limites. Il plaque tout du jour au lendemain pour partir à l'aventure.</p>
+            <!--faire une liste des infos au-dessus-->
+            <button>Je suis intéressé</button>
+          </div>
+          <div class="movie-card-img">
+            <img src="./public/images/IntoTheWild.jpg" alt="movie picture">
+          </div>
+        </article>
+        <article class="movie-card">
+          <div class="movie-card-info">
+            <h3>Taxi Driver</h3>
+            <p>Film de Martin Scorsese · 1 h 53 min · Genres : Drame, Policier · 2 juin 1976 (France) · Casting (acteurs principaux) : Robert De Niro, Jodie Foster, Harvey Keitel, Cybill Shepherd · Vétéran de la Guerre du Vietnam, Travis Bickle est chauffeur de taxi dans la ville de New York. Ses rencontres nocturnes et la violence quotidienne dont il est témoin lui font peu à peu perdre la tête. Il se charge bientôt de délivrer une prostituée mineure de ses souteneurs.</p>
+            <!--faire une liste des infos au-dessus-->
+            <button>Je suis intéressé</button>
+          </div>
+          <div class="movie-card-img">
+            <img src="./public/images/TaxiDriver.jpg" alt="movie picture">
+          </div>
+        </article>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
