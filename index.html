@@ -5,6 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="./public/images/popcorn1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Films En Plein Air</title>
   </head>
   <body>
@@ -30,7 +37,7 @@
             Notre association vient d'obtenir l'autorisation de projeter au parc
             Monceau, chaque soir du 5 au 8 août, de 18 heures à minuit.
           </p>
-          <button><a href="news.html">Plus de news</a></button>
+          <button onclick="location.href = '/news.html'">Plus de news</button>
         </div>
         <div class="event-section-image"></div>
         <img id="emptyBucket" src="/public/images/emptyBucket.png" />
@@ -46,9 +53,11 @@
           <div class="movie-card-info">
             <h3>Into the Wild</h3>
             <p>
-              <em>Film de</em> Sean Penn · <em>Date et heure de projection :</em> 5 août 2023 à 18h15 · <em>Durée :</em> 2 h 28 min · <em>Synopsis :</em> Christopher
-              a 22 ans et une soif d'absolu et de liberté sans limites. Il
-              plaque tout du jour au lendemain pour partir à l'aventure.
+              <em>Film de</em> Sean Penn ·
+              <em>Date et heure de projection :</em> 5 août 2023 à 18h15 ·
+              <em>Durée :</em> 2 h 28 min · <em>Synopsis :</em> Christopher a 22
+              ans et une soif d'absolu et de liberté sans limites. Il plaque
+              tout du jour au lendemain pour partir à l'aventure.
             </p>
             <!--faire une liste des infos au-dessus-->
             <button class="reservation">Je suis intéressé</button>
@@ -61,7 +70,9 @@
           <div class="movie-card-info">
             <h3>Taxi Driver</h3>
             <p>
-              <em>Film de </em>Martin Scorsese · <em>Date et heure de projection :</em> 5 août 2023 à 21 h 00 · <em>Durée :</em> 1 h 53 min ·  <em>Synopsis :</em> Vétéran de la
+              <em>Film de </em>Martin Scorsese ·
+              <em>Date et heure de projection :</em> 5 août 2023 à 21 h 00 ·
+              <em>Durée :</em> 1 h 53 min · <em>Synopsis :</em> Vétéran de la
               Guerre du Vietnam, Travis Bickle est chauffeur de taxi dans la
               ville de New York. Ses rencontres nocturnes et la violence
               quotidienne dont il est témoin lui font peu à peu perdre la tête.
@@ -75,7 +86,7 @@
             <img src="./public/images/TaxiDriver.jpg" alt="movie picture" />
           </div>
         </article>
-        <button id="allFilms"><a href="about.html">Voir plus</a></button>
+        <button onclick="location.href = '/films.html'" id="allFilms">Voir plus</button>
       </section>
       <div class="modal-page" id="myModal">
         <div class="modal">
@@ -109,49 +120,51 @@
                   <option value="" disabled selected hidden>
                     Choisissez le film qui vous intéresse
                   </option>
-                  <option value="into the wild">
-                    INTO THE WILD
-                  </option>
-                  <option value="taxi driver">
-                    TAXI DRIVER
-                  </option>
-                  <option value="her">
-                    HER
-                  </option>
+                  <option value="into the wild">INTO THE WILD</option>
+                  <option value="taxi driver">TAXI DRIVER</option>
+                  <option value="her">HER</option>
                   <option value="le cercle des poetes disparus">
                     LE CERCLE DES POETES DISPARUS
                   </option>
-                  <option value="la haine">
-                    LA HAINE
-                  </option>
+                  <option value="la haine">LA HAINE</option>
                   <option value="2001 l'odyssee de l'espace">
                     2001 L'ODYSSEE DE L'ESPACE
                   </option>
-                  <option value="gravity">
-                    GRAVITY
-                  </option>
-                  <option value="Mar adentro">
-                    MAR ADENTRO
-                  </option>
+                  <option value="gravity">GRAVITY</option>
+                  <option value="Mar adentro">MAR ADENTRO</option>
                 </select>
               </div>
               <div>
-                <label for="message">Votre message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Bonjour, je vous contacte car...."
-                  required
-                ></textarea>
+                <label for="nombrePersonnes">Combien de personnes seront présentes ?</label>
+                <input
+                  type="number"
+                  id="nombrePersonnes"
+                  name="nombrePersonnes"
+                  min="1"
+                  max="20"
+                />
               </div>
               <div>
-                <button type="submit">Envoyer mon message</button>
+                <button type="submit">Dire que je serais là !</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-social">
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <p><a href="./contact.html">Nous contacter</a></p>
+        <p>Copyright © 2023 - Les Films de Plein Air</p>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
