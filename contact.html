@@ -1,58 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Contact</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="nav-left">
-          <img src="./public/images/logoCinema.png" alt="logo" />
-          <h1>Les Films de Plein Air</h1>
-        </div>
-        <div class="nav-right">
-          <a href="./index.html">Accueil</a>
-          <a href="./about.html">Qui sommes-nous ?</a>
-          <a href="./news.html">Articles</a>
-          <a href="./films.html">Prochains films</a>
-          <a href="./contact.html">Contact</a>
-        </div>
-      </nav>
-      <main class="contact-page">
-        <div class="contactez-nous">
-            <h1>Contactez-nous</h1>
-            <p>Un problème, une question, envie de nous envoyer un message d’amour ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
-            <form action="/page-traitement-donnees" method="post">
-            <div>
+      <div class="nav-left">
+        <img src="./public/images/logoCinema.png" alt="logo" />
+        <h1>Les Films de Plein Air</h1>
+      </div>
+      <div class="nav-right">
+        <a href="./index.html">Accueil</a>
+        <a href="./about.html">Qui sommes-nous ?</a>
+        <a href="./news.html">Articles</a>
+        <a href="./films.html">Prochains films</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+    <main class="contact-page">
+      <div class="contactez-nous">
+        <h1>Contactez-nous</h1>
+        <form action="/page-traitement-donnees" method="post">
+          <div>
             <label for="nom">Votre nom</label>
-            <input type="text" id="nom" name="nom" placeholder="Martin" required>
-            </div>
-            <div>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              placeholder="Martin"
+              required
+            />
+          </div>
+          <div>
             <label for="email">Votre e-mail</label>
-            <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
-            </div>
-            <div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="monadresse@mail.com"
+              required
+            />
+          </div>
+          <div>
             <label for="sujet">Quel est le sujet de votre message ?</label>
             <select name="sujet" id="sujet" required>
-            <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
-            <option value="probleme-compte">Problème avec mon compte</option>
-            <option value="question-produit">Question à propos d’un produit</option>
-            <option value="suivi-commande">Suivi de ma commande</option>
-            <option value="autre">Autre...</option>
+              <option value="" disabled selected hidden>
+                Choisissez le sujet de votre message
+              </option>
+              <option value="probleme-compte">Problème avec mon compte</option>
+              <option value="question-produit">
+                Question à propos d’un produit
+              </option>
+              <option value="suivi-commande">Suivi de ma commande</option>
+              <option value="autre">Autre...</option>
             </select>
-            </div>
-            <div>
+          </div>
+          <div>
             <label for="message">Votre message</label>
-            <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
-            </div>
-            <div>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Bonjour, je vous contacte car...."
+              required
+            ></textarea>
+          </div>
+          <div>
             <button type="submit">Envoyer mon message</button>
-            </div>
-            </form>
-            </div>
-      </main>
-</body>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
