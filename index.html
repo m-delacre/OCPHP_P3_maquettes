@@ -52,16 +52,21 @@
       <section class="movies-section">
         <article class="movie-card">
           <div class="movie-card-info">
-            <h3>Into the Wild</h3>
-            <p>
-              <em>Film de</em> Sean Penn ·
-              <em>Date et heure de projection :</em> 5 août 2023 à 18h15 ·
-              <em>Durée :</em> 2 h 28 min · <em>Synopsis :</em> Christopher a 22
-              ans et une soif d'absolu et de liberté sans limites. Il plaque
-              tout du jour au lendemain pour partir à l'aventure.
-            </p>
-            <!--faire une liste des infos au-dessus-->
-            <button class="reservation">Je suis intéressé</button>
+            <div class="movie-card-info-title">
+              <h3>Into the Wild</h3>
+            </div>
+            <div class="movie-card-info-description">
+              <p>
+                <em>Film de</em> Sean Penn ·
+                <em>Date et heure de projection :</em> 5 août 2023 à 18h15 ·
+                <em>Durée :</em> 2 h 28 min · <em>Synopsis :</em> Christopher a 22
+                ans et une soif d'absolu et de liberté sans limites. Il plaque
+                tout du jour au lendemain pour partir à l'aventure.
+              </p>
+            </div>
+            <div class="movie-card-info-btn">
+              <button class="reservation">Je suis intéressé</button>
+            </div>
           </div>
           <div class="movie-card-img">
             <img src="./public/images/IntoTheWild.jpg" alt="movie picture" />
@@ -69,19 +74,24 @@
         </article>
         <article class="movie-card">
           <div class="movie-card-info">
-            <h3>Taxi Driver</h3>
-            <p>
-              <em>Film de </em>Martin Scorsese ·
-              <em>Date et heure de projection :</em> 5 août 2023 à 21 h 00 ·
-              <em>Durée :</em> 1 h 53 min · <em>Synopsis :</em> Vétéran de la
-              Guerre du Vietnam, Travis Bickle est chauffeur de taxi dans la
-              ville de New York. Ses rencontres nocturnes et la violence
-              quotidienne dont il est témoin lui font peu à peu perdre la tête.
-              Il se charge bientôt de délivrer une prostituée mineure de ses
-              souteneurs.
-            </p>
-            <!--faire une liste des infos au-dessus-->
-            <button class="reservation">Je suis intéressé</button>
+            <div class="movie-card-info-title">
+              <h3>Taxi Driver</h3>
+            </div>
+            <div class="movie-card-info-description">
+              <p>
+                <em>Film de </em>Martin Scorsese ·
+                <em>Date et heure de projection :</em> 5 août 2023 à 21 h 00 ·
+                <em>Durée :</em> 1 h 53 min · <em>Synopsis :</em> Vétéran de la
+                Guerre du Vietnam, Travis Bickle est chauffeur de taxi dans la
+                ville de New York. Ses rencontres nocturnes et la violence
+                quotidienne dont il est témoin lui font peu à peu perdre la tête.
+                Il se charge bientôt de délivrer une prostituée mineure de ses
+                souteneurs.
+              </p>
+            </div>
+            <div class="movie-card-info-btn">
+              <button class="reservation">Je suis intéressé</button>
+            </div>
           </div>
           <div class="movie-card-img">
             <img src="./public/images/TaxiDriver.jpg" alt="movie picture" />
@@ -89,12 +99,13 @@
         </article>
         <button onclick="location.href = '/films.html'" id="allFilms">Voir plus</button>
       </section>
+      <!-- modal réservation-->
       <div class="modal-page" id="myModal">
         <div class="modal">
           <span class="close">&times;</span>
           <div class="reservation-film">
             <h1>Je souhaite voir ce film</h1>
-            <form action="#" method="post">
+            <form>
               <div>
                 <label for="nom">Votre nom</label>
                 <input
@@ -128,11 +139,11 @@
                     LE CERCLE DES POETES DISPARUS
                   </option>
                   <option value="la haine">LA HAINE</option>
+                  <option value="gravity">GRAVITY</option>
+                  <option value="Mar adentro">MAR ADENTRO</option>
                   <option value="2001 l'odyssee de l'espace">
                     2001 L'ODYSSEE DE L'ESPACE
                   </option>
-                  <option value="gravity">GRAVITY</option>
-                  <option value="Mar adentro">MAR ADENTRO</option>
                 </select>
               </div>
               <div>
@@ -146,7 +157,7 @@
                 />
               </div>
               <div>
-                <button type="submit">Dire que je serais là !</button>
+                <button>Dire que je serais là !</button>
               </div>
             </form>
           </div>

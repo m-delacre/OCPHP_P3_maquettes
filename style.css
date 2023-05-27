@@ -91,7 +91,6 @@ main {
   margin-right: 15%;
   margin-top: 100px;
   margin-bottom: 50px;
-  overflow: hidden;
 }
 
 .event-section {
@@ -187,16 +186,6 @@ main {
   color: #252525;
 }
 
-/*.event-section-description button:hover a {
-  color: #252525;
-}
-
-.event-section-description button a {
-  color: wheat;
-  text-decoration: none;
-  font-weight: bold;
-}*/
-
 .event-section-image {
   width: 550px;
   height: 500px;
@@ -244,19 +233,37 @@ main {
   justify-content: center;
   align-items: start;
 }
-.movie-card-info h3 {
+
+.movie-card-info-title {
+  margin-top: 30px;
+  width: 100%;
+  height: 15%;
+}
+
+.movie-card-info-title h3 {
+  width: 100%;
+  height: 100%;
   margin: 0;
   font-size: 30px;
 }
 
-.movie-card-info p{
+.movie-card-info-description{
   width: 100%;
-  height: fit-content;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  height: 65%;
+  overflow: hidden;
 }
 
-.movie-card-info em {
+.movie-card-info-description p{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: -webkit-box;
+   -webkit-line-clamp: 7; /* number of lines to show */
+           line-clamp: 7; 
+   -webkit-box-orient: vertical;
+}
+
+.movie-card-info-description em {
   font-weight: bolder;
   color: rgb(199, 0, 0);
 }
@@ -288,7 +295,12 @@ main {
 }
 
 /*  bouton reservation sur la card movie  */
-.movie-card button {
+.movie-card-info-btn{
+  width: 100%;
+  height: 25%;
+}
+
+.movie-card-info-btn button {
   width: 150px;
   height: 50px;
   color: wheat;
@@ -298,7 +310,7 @@ main {
   font-weight: bold;
 }
 
-.movie-card button:hover {
+.movie-card-info-btn button:hover {
   cursor: pointer;
   background-color: wheat;
   border: 4px solid rgb(199, 0, 0);
@@ -386,9 +398,17 @@ main {
   color: wheat;
 }
 
+/*  page film */
+
+.films-page  > h1{
+  font-family: 'Lobster', cursive;
+}
+
+
 /*  formulaire de contact page contact  */
 .contact-page {
   margin-top: 150px;
+  margin-bottom: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
