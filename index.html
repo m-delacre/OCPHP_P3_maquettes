@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./public/images/popcorn1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       rel="stylesheet"
@@ -25,7 +28,7 @@
         <a href="./index.html">Accueil</a>
         <a href="./about.html">Qui sommes-nous ?</a>
         <a href="./news.html">Articles</a>
-        <a href="./films.html">Les films</a>
+        <a href="./films.html">Films</a>
         <a href="./contact.html">Contact</a>
       </div>
     </nav>
@@ -41,11 +44,13 @@
           <button onclick="location.href = '/news.html'">Plus de news</button>
         </div>
         <div class="event-section-image"></div>
-        <img id="emptyBucket" src="/public/images/emptyBucket.png" />
-        <img id="popcorn1" src="/public/images/popcorn1.png" />
-        <img id="popcorn2" src="/public/images/popcorn2.png" />
-        <img id="popcorn3" src="/public/images/popcorn1.png" />
-        <img id="popcorn4" src="/public/images/popcorn2.png" />
+        <img id="home-emptyBucket" src="/public/images/emptyBucket.png" class="corn-shadow"/>
+        <img id="home-popcorn1" src="/public/images/popcorn1.png" class="corn-shadow"/>
+        <img id="home-popcorn2" src="/public/images/popcorn2.png" class="corn-shadow"/>
+        <img id="home-popcorn3" src="/public/images/popcorn1.png" class="corn-shadow"/>
+        <img id="home-popcorn4" src="/public/images/popcorn2.png" class="corn-shadow"/>
+        <img id="home-popcorn5" src="/public/images/popcorn1.png" class="corn-shadow"/>
+        <img id="home-popcorn6" src="/public/images/popcorn2.png" class="corn-shadow"/>
       </section>
       <!--Prochain films-->
       <h2 id="nextMovie">Les films à venir :</h2>
@@ -59,9 +64,9 @@
               <p>
                 <em>Film de</em> Sean Penn ·
                 <em>Date et heure de projection :</em> 5 août 2023 à 18h15 ·
-                <em>Durée :</em> 2 h 28 min · <em>Synopsis :</em> Christopher a 22
-                ans et une soif d'absolu et de liberté sans limites. Il plaque
-                tout du jour au lendemain pour partir à l'aventure.
+                <em>Durée :</em> 2 h 28 min · <em>Synopsis :</em> Christopher a
+                22 ans et une soif d'absolu et de liberté sans limites. Il
+                plaque tout du jour au lendemain pour partir à l'aventure.
               </p>
             </div>
             <div class="movie-card-info-btn">
@@ -84,9 +89,9 @@
                 <em>Durée :</em> 1 h 53 min · <em>Synopsis :</em> Vétéran de la
                 Guerre du Vietnam, Travis Bickle est chauffeur de taxi dans la
                 ville de New York. Ses rencontres nocturnes et la violence
-                quotidienne dont il est témoin lui font peu à peu perdre la tête.
-                Il se charge bientôt de délivrer une prostituée mineure de ses
-                souteneurs.
+                quotidienne dont il est témoin lui font peu à peu perdre la
+                tête. Il se charge bientôt de délivrer une prostituée mineure de
+                ses souteneurs.
               </p>
             </div>
             <div class="movie-card-info-btn">
@@ -97,7 +102,9 @@
             <img src="./public/images/TaxiDriver.jpg" alt="movie picture" />
           </div>
         </article>
-        <button onclick="location.href = '/films.html'" id="allFilms">Voir plus</button>
+        <button onclick="location.href = '/films.html'" id="allFilms">
+          Voir plus
+        </button>
       </section>
       <!-- modal réservation-->
       <div class="modal-page" id="myModal">
@@ -147,7 +154,9 @@
                 </select>
               </div>
               <div>
-                <label for="nombrePersonnes">Combien de personnes seront présentes ?</label>
+                <label for="nombrePersonnes"
+                  >Combien de personnes seront présentes ?</label
+                >
                 <input
                   type="number"
                   id="nombrePersonnes"
