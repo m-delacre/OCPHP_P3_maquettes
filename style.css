@@ -690,6 +690,7 @@ form button:hover {
 footer {
   width: auto;
   height: 170px;
+  position: relative;
   background-color: #252525;
   display: flex;
   flex-direction: column;
@@ -698,6 +699,7 @@ footer {
   gap: 0;
   margin: 0;
   padding: 20px;
+  z-index: 2;
 }
 
 .footer-content {
@@ -818,13 +820,12 @@ a:visited {
     left: 0;
     color: wheat;
     padding-top: 50px;
-    z-index: 3;
+    z-index: 10;
   }
 
   main {
     margin-left: 5%;
     margin-right: 5%;
-    overflow: hidden;
   }
 
   /* page accueil */
@@ -1248,11 +1249,24 @@ a:visited {
 }
 
 #about-popcorn3 {
-  display: none;
+  display: flex;
+  position: absolute;
+  top: 1250px;
+  left: 170px;
+  width: 180px;
+  height: 120px;
+  z-index: 3;
+  transform: rotate(150deg);
 }
 
 #about-popcorn4 {
-  display: none;
+  display: flex;
+  position: absolute;
+  top: 1380px;
+  left: 0px;
+  width: 180px;
+  height: 120px;
+  z-index: 1;
 }
 
 #about-popcorn5 {
@@ -1264,20 +1278,18 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 30px;
   margin-bottom: 80px;
 }
 .articles-page > h1 {
-  font-family: "Lobster", cursive;
-  font-size: 50px;
-  text-align: center;
+  font-size: 35px;
 }
 
 .articles-page-articles {
   width: 100%;
   height: fit-content;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -1285,9 +1297,9 @@ a:visited {
 }
 
 .articles-page-articles > article {
-  width: 45%;
+  width: 90%;
   height: fit-content;
-  padding: 20px;
+  padding: 10px;
   background-color: #252525;
   color: wheat;
   display: flex;
@@ -1296,13 +1308,10 @@ a:visited {
   border: 6px white solid;
 }
 
-.articles-page-articles > article:hover {
-  cursor: pointer;
-}
-
 .articles-page-articles > article > h2 {
   width: 100%;
   height: 20%;
+  font-size: 20px;
 }
 
 .articles-page-articles article p {
@@ -1311,6 +1320,7 @@ a:visited {
   -webkit-line-clamp: 2; /* number of lines to show */
   line-clamp: 2;
   -webkit-box-orient: vertical;
+  font-size: 14px;
 }
 
 }
