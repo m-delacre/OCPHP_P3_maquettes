@@ -23,6 +23,8 @@
       <div class="nav-left">
         <img src="./public/images/logoCinema.png" alt="logo" />
         <h1>Les Films de Plein Air</h1>
+        <i class="fa-solid fa-bars"></i>
+        <span>&times;</span>
       </div>
       <div class="nav-right">
         <a href="./index.html">Accueil</a>
@@ -109,7 +111,7 @@
       <!-- modal réservation-->
       <div class="modal-page" id="myModal">
         <div class="modal">
-          <span class="close">&times;</span>
+          <span id="closeReservation" class="close">&times;</span>
           <div class="reservation-film">
             <h1>Je souhaite voir ce film</h1>
             <form>
@@ -186,6 +188,7 @@
         <p>Copyright © 2023 - Les Films de Plein Air</p>
       </div>
     </footer>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/reservation-modal.js"></script>
+    <script type="module" src="/navigation.js"></script>
   </body>
 </html>

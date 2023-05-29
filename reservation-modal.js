@@ -5,7 +5,6 @@ let modal = document.getElementById("myModal");
 let btn = document.getElementById("myBtn");
 
 let mesBtn = document.getElementsByClassName("reservation");
-console.log(mesBtn)
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -18,7 +17,7 @@ for(let bouton of mesBtn){
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+document.getElementById("closeReservation").onclick = function() {
   modal.style.display = "none";
 }
 
@@ -27,4 +26,24 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+//nav mobile
+const navIconBurger = document.querySelector(".nav-left i")
+const navIconClose = document.querySelector(".nav-left span")
+const menuNavigation = document.querySelector(".nav-right")
+
+navIconBurger.addEventListener("click", (e)=>{openMobileNavigation()});
+navIconClose.addEventListener("click", (e)=>{closeMobileNavigation()});
+
+function openMobileNavigation(){
+  navIconBurger.style.display = 'none';
+  navIconClose.style.display = 'flex';
+  menuNavigation.style.display= 'flex';
+}
+
+function closeMobileNavigation(){
+  navIconBurger.style.display = 'flex';
+  navIconClose.style.display = 'none';
+  menuNavigation.style.display= 'none';
 }
