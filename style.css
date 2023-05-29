@@ -745,14 +745,6 @@ a:visited {
 
 /*  mobile  */
 @media only screen and (max-width: 600px) {
-  .active {
-    display: flex;
-  }
-
-  .inactive {
-    display: none;
-  }
-
   nav {
     display: flex;
     flex-direction: column;
@@ -1194,133 +1186,822 @@ a:visited {
 
   /*  page qui sommes-nous? */
 
-.about-page > h1 {
-  font-size: 25px;
+  .about-page > h1 {
+    font-size: 25px;
+  }
+
+  .about-page > article {
+    font-size: 15px;
+    color: wheat;
+    background-color: #252525;
+    border: 6px solid rgb(199, 0, 0);
+    border-radius: 15px;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 150px;
+    z-index: 2;
+  }
+
+  .about-page > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 70px;
+    border-radius: 50% 50% 30% 80%/60% 50% 50% 40%;
+    z-index: 2;
+  }
+
+  #about-emptyBucket {
+    display: flex;
+    position: absolute;
+    top: 520px;
+    left: 0;
+    width: 300px;
+    height: 200px;
+  }
+
+  #about-popcorn1 {
+    display: flex;
+    position: absolute;
+    top: 450px;
+    left: 80px;
+    width: 100px;
+    height: 80px;
+    z-index: 3;
+  }
+
+  #about-popcorn2 {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 220px;
+    width: 150px;
+    height: 100px;
+    z-index: 3;
+  }
+
+  #about-popcorn3 {
+    display: flex;
+    position: absolute;
+    top: 1250px;
+    left: 170px;
+    width: 180px;
+    height: 120px;
+    z-index: 3;
+    transform: rotate(150deg);
+  }
+
+  #about-popcorn4 {
+    display: flex;
+    position: absolute;
+    top: 1380px;
+    left: 0px;
+    width: 180px;
+    height: 120px;
+    z-index: 1;
+  }
+
+  #about-popcorn5 {
+    display: none;
+  }
+
+  /*  page articles */
+  .articles-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+  .articles-page > h1 {
+    font-size: 35px;
+  }
+
+  .articles-page-articles {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 25px;
+  }
+
+  .articles-page-articles > article {
+    width: 90%;
+    height: fit-content;
+    padding: 10px;
+    background-color: #252525;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 6px white solid;
+  }
+
+  .articles-page-articles > article > h2 {
+    width: 100%;
+    height: 20%;
+    font-size: 20px;
+  }
+
+  .articles-page-articles article p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 14px;
+  }
 }
 
-.about-page > article {
-  font-size: 15px;
-  color: wheat;
-  background-color: #252525;
-  border: 6px solid rgb(199, 0, 0);
-  border-radius: 15px;
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 150px;
-  z-index: 2;
+/*  tablette  */
+@media only screen and (min-width: 600px) and (max-width: 1299px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90px;
+    background-color: #252525;
+    position: relative;
+    color: #f5deb3;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+  }
+
+  .nav-left i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: wheat;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .nav-left span {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: wheat;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  nav h1 {
+    font-family: "Lobster", cursive;
+    font-size: 30px;
+  }
+
+  .nav-left img {
+    width: 100px;
+    height: 95px;
+  }
+
+  .nav-right {
+    width: 100%;
+    height: 100vh;
+    background-color: #252525;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    color: wheat;
+    padding-top: 50px;
+    z-index: 10;
+    font-size: 20px;
+  }
+
+  main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* page accueil */
+  .corn-shadow {
+    filter: none;
+  }
+
+  #home-emptyBucket {
+    display: none;
+  }
+
+  #home-popcorn1 {
+    display: none;
+  }
+
+  #home-popcorn2 {
+    display: none;
+  }
+
+  #home-popcorn3 {
+    display: none;
+  }
+
+  #home-popcorn4 {
+    display: none;
+  }
+
+  #home-popcorn5 {
+    display: none;
+  }
+
+  #home-popcorn6 {
+    display: none;
+  }
+
+  .event-section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 100px;
+    position: relative;
+  }
+
+  .event-section-description {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    background-color: #252525;
+    border-radius: 20px;
+    border: 6px solid white;
+    color: wheat;
+    padding: 6px;
+    text-align: justify;
+    z-index: 2;
+  }
+
+  .event-section-description h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .event-section-description p {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .event-section-description button {
+    width: 150px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .event-section-image {
+    width: 90%;
+    height: 450px;
+    border-radius: 40% 50% 20% 80%/60% 50% 50% 40%;
+    z-index: 2;
+  }
+
+  h2 {
+    margin-left: 5%;
+    font-size: 35px;
+  }
+
+  .movies-section {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*  carte d'un film */
+  .movie-card {
+    width: 90%;
+    height: fit-content;
+    background-color: #252525;
+    color: wheat;
+    border: 6px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    filter: none;
+  }
+
+  .movie-card-info {
+    width: 100%;
+    height: 60%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .movie-card-info-title {
+    margin-top: 10px;
+    width: fit-content;
+    height: 10%;
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  .movie-card-info-title h3 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+  }
+
+  .movie-card-info-description {
+    width: auto;
+    height: fit-content;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .movie-card-info-description p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: block;
+    width: 95%;
+    height: fit-content;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .movie-card-info-description em {
+    font-weight: bolder;
+    color: rgb(199, 0, 0);
+  }
+
+  .movie-card-img {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    margin: 0;
+  }
+
+  .movie-card-img img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  /*  le fade sur la movie card entre la description et l'img */
+  .movie-card-img:before {
+    display: none;
+  }
+
+  /*  bouton reservation sur la card movie  */
+  .movie-card-info-btn {
+    width: fit-content;
+    height: 25%;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  .movie-card-info-btn button {
+    width: 180px;
+    height: 60px;
+    color: wheat;
+    border: 3px solid wheat;
+    border-radius: 15px;
+    background-color: rgb(199, 0, 0);
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  #allFilms {
+    font-size: 20px;
+  }
+
+  /*  modal */
+
+  .modal-page {
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    padding-top: 0px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  .modal {
+    background-color: #252525;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    border: 4px solid rgb(199, 0, 0);
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+  }
+
+  /*  modal close button */
+  .close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: wheat;
+    padding: 0%;
+    margin: 0%;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .reservation-film {
+    width: 100%;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 0px;
+    background: #252525;
+    color: wheat;
+  }
+
+  form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 83px;
+    margin-top: 25px;
+  }
+
+  form div > label {
+    margin-bottom: 7px;
+    font-weight: 600;
+  }
+
+  form div > input,
+  form div > select,
+  form div > textarea {
+    background: wheat;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Montserrat, "sans-serif";
+    color: #252525;
+  }
+
+  form div > input,
+  form div > select {
+    height: 50px;
+    padding-left: 10px;
+  }
+
+  form div > select {
+    appearance: none;
+    background-size: 15px;
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+  }
+
+  form div > textarea {
+    height: 180px;
+    padding: 15px 0px 0px 10px;
+  }
+
+  form button {
+    width: 200px;
+    max-width: 500px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 17px;
+    background: wheat;
+    border: rgb(199, 0, 0) solid 2px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #252525;
+    margin-top: 15px;
+  }
+
+  /*  formulaire de contact page contact  */
+  .contact-page {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .contactez-nous {
+    width: 90%;
+    border: 5px solid red;
+    border-radius: 8px;
+    padding: 10px;
+    background: #252525;
+    color: wheat;
+  }
+
+  /*  page qui sommes-nous? */
+
+  .about-page > h1 {
+    font-size: 40px;
+  }
+
+  .about-page > article {
+    font-size: 15px;
+    color: wheat;
+    background-color: #252525;
+    border: 6px solid rgb(199, 0, 0);
+    border-radius: 15px;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 150px;
+    z-index: 2;
+  }
+
+  .about-page > article > p {
+    font-size: 20px;
+  }
+
+  .about-page > img {
+    width: 95%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 70px;
+    border-radius: 50% 50% 30% 80%/60% 50% 50% 40%;
+    z-index: 2;
+  }
+
+  #about-emptyBucket {
+    display: none;
+  }
+
+  #about-popcorn1 {
+    display: none;
+  }
+
+  #about-popcorn2 {
+    display: none;
+  }
+
+  #about-popcorn3 {
+    display: none;
+  }
+
+  #about-popcorn4 {
+    display: none;
+  }
+
+  #about-popcorn5 {
+    display: none;
+  }
+
+  /*  page articles */
+  .articles-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+  .articles-page > h1 {
+    font-size: 45px;
+  }
+
+  .articles-page-articles {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 25px;
+  }
+
+  .articles-page-articles > article {
+    width: 90%;
+    height: fit-content;
+    padding: 10px;
+    background-color: #252525;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 6px white solid;
+  }
+
+  .articles-page-articles > article > h2 {
+    width: 100%;
+    height: 20%;
+    font-size: 28px;
+  }
+
+  .articles-page-articles article p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 20px;
+  }
+
+  #nextMovie {
+    font-size: 40px;
+    margin-left: 5%;
+  }
 }
 
-.about-page > img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  margin-bottom: 70px;
-  border-radius: 50% 50% 30% 80%/60% 50% 50% 40%;
-  z-index: 2;
-}
+@media only screen and (min-width: 1300px) and (max-width: 1800px) {
+  
+  .nav-left {
+    width: auto;
+    height: 100%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+  }
+  
+  .nav-left i,
+  .nav-left span {
+    display: none;
+  }
+  
+  nav h1 {
+    font-size: 25px;
+  }
+  
+  .nav-right {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 50px;
+    margin-right: 5%;
+  }
 
-#about-emptyBucket {
-  display: flex;
-  position: absolute;
-  top: 520px;
-  left: 0;
-  width: 300px;
-  height: 200px;
-}
+  main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-#about-popcorn1 {
-  display: flex;
-  position: absolute;
-  top: 450px;
-  left: 80px;
-  width: 100px;
-  height: 80px;
-  z-index: 3;
-}
+  #home-emptyBucket {
+    width: 550px;
+  }
+  
+  #home-popcorn1 {
+    position: absolute;
+    top: 80px;
+    left: -20px;
+    width: 180px;
+    height: 130px;
+    transform: rotate(60deg);
+    z-index: 2;
+  }
+  
+  #home-popcorn2 {
+    position: absolute;
+    top: 10px;
+    right: 350px;
+    width: 250px;
+    height: 150px;
+    transform: rotate(110deg);
+    z-index: 2;
+  }
+  
+  #home-popcorn3 {
+    position: absolute;
+    top: 480px;
+    right: 80px;
+    width: 190px;
+    height: 150px;
+    transform: rotate(220deg);
+    z-index: 2;
+  }
+  
+  #home-popcorn4 {
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    width: 280px;
+    height: 180px;
+    z-index: 1;
+  }
+  
+  #home-popcorn5 {
+    position: absolute;
+    top: 1080px;
+    left: 150px;
+    width: 160px;
+    height: 130px;
+    transform: rotate(250deg);
+    z-index: 1;
+  }
+  
+  #home-popcorn6 {
+    position: absolute;
+    top: 1650px;
+    left: 550px;
+    width: 280px;
+    height: 150px;
+    z-index: 0;
+  }
 
-#about-popcorn2 {
-  display: flex;
-  position: absolute;
-  top: 70px;
-  left: 220px;
-  width: 150px;
-  height: 100px;
-  z-index: 3;
-}
-
-#about-popcorn3 {
-  display: flex;
-  position: absolute;
-  top: 1250px;
-  left: 170px;
-  width: 180px;
-  height: 120px;
-  z-index: 3;
-  transform: rotate(150deg);
-}
-
-#about-popcorn4 {
-  display: flex;
-  position: absolute;
-  top: 1380px;
-  left: 0px;
-  width: 180px;
-  height: 120px;
-  z-index: 1;
-}
-
-#about-popcorn5 {
-  display: none;
-}
-
-/*  page articles */
-.articles-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 80px;
-}
-.articles-page > h1 {
-  font-size: 35px;
-}
-
-.articles-page-articles {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  gap: 25px;
-}
-
-.articles-page-articles > article {
-  width: 90%;
-  height: fit-content;
-  padding: 10px;
-  background-color: #252525;
-  color: wheat;
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-  border: 6px white solid;
-}
-
-.articles-page-articles > article > h2 {
-  width: 100%;
-  height: 20%;
-  font-size: 20px;
-}
-
-.articles-page-articles article p {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* number of lines to show */
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-  font-size: 14px;
-}
-
+  .about-page > h1 {
+    font-size: 40px;
+  }
+  
+  
+  #about-emptyBucket {
+    position: absolute;
+    top: 620px;
+    left: 250px;
+    width: 550px;
+    height: 600px;
+    z-index: 1;
+  }
+  
+  #about-popcorn1 {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    width: 170px;
+    height: 150px;
+    transform: rotate(120deg);
+    z-index: 2;
+  }
+  
+  #about-popcorn2 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 170px;
+    height: 150px;
+    z-index: 2;
+  }
+  
+  #about-popcorn3 {
+    position: absolute;
+    bottom: 430px;
+    left: 0;
+    width: 150px;
+    height: 110px;
+    transform: rotate(50deg);
+    z-index: 3;
+  }
+  
+  #about-popcorn4 {
+    position: absolute;
+    top: 580px;
+    right: 0;
+    width: 280px;
+    height: 180px;
+    z-index: 3;
+  }
+  
+  #about-popcorn5 {
+    position: absolute;
+    bottom: -100px;
+    right: 100px;
+    width: 280px;
+    height: 180px;
+    z-index: 1;
+  }
+  
+  .corn-shadow {
+    filter: none;
+  }
 }
